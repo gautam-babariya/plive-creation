@@ -1,0 +1,171 @@
+.footer_maindiv {
+    background-color: black;
+    height: max-content;
+    /* width: ; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4rem 3rem 7rem 3rem;
+    font-family: var(--heading-font);
+}
+
+#footer_infologo {
+    width: 30vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+}
+
+#footer_logoimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer_navlinks {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_info {
+    font-size: larger;
+}
+
+#footer_quicklinkdiv {
+    width: 30vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer_socialmedia {
+    width: 30vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer_socialtitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#footer_quicktitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#footer_gmailforcontact {
+    font-size: 1rem;
+}
+
+#footer_instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_instaimg {
+    width: 2rem;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#footer_linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_linkedinimg {
+    width: 2rem;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#footer_socialmedia_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .footer_maindiv {
+        padding: 2rem 1rem 4rem 1rem;
+    }
+
+    #footer_infologo {
+        width: 80vw;
+    }
+
+    #footer_quicklinkdiv {
+        width: 80vw;
+    }
+
+    #footer_socialmedia {
+        width: 80vw;
+    }
+
+    #footer_logo {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #footer_socialtitle {
+        font-size: 1.5rem;
+    }
+
+    #footer_quicktitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #footer_gmailforcontact {
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    #footer_instaimg {
+        width: 1.5rem;
+    }
+
+    #footer_linkedinimg {
+        width: 1.5rem;
+    }
+
+    #footer_socialmedia_icons {
+        margin-top: 0.5rem;
+    }
+
+    #footer_tagline {
+        margin-bottom: 2rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

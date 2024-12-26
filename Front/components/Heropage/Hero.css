@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero_maindiv {
+    width: -webkit-fill-available;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('..\..\public\assets\Hero\blurbackground.png');
+    /* Specify the image path */
+    background-size: cover;
+    /* Makes the image cover the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+/* navbar  */
+.hero_navbar {
+    width: 98vw;
+    /* height: 5rem; */
+    /* background-color: red; */
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_navboot {
+    box-shadow: 0px 0px 28px -3px rgb(83 118 160 / 57%);
+    height: max-content;
+    background-color: #e5e7e4d4 !important;
+    /* position: fixed; */
+    top: 3rem;
+    width: 90%;
+}
+
+
+.hero_divoflogo {
+    font-family: var(--heading-font);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    font-family: var(--heading-font);
+}
+.hero_navlinks{
+    font-size: medium;
+}
+#hero_navbutton{
+    border: none;
+    box-shadow: none;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid black;
+    /* Underline effect */
+    font-weight: bold;
+}
+
+.hero_navboot {
+    border-radius: 3rem;
+    animation: slidenav 1s ease-out forwards;
+}
+
+.hero_divoflogo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#hero_logo{
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero_navlinkdiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* display  */
+.hero_display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hero_attractimgdiv {
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_closedivattractimg {
+    width: 90%;
+    height: max-content;
+}
+
+#hero_attractimg {
+    width: 100%;
+    animation: slideOut 1s ease-out forwards;
+    transform: scaleX(-1);
+}
+
+.hero_nametagline {
+    width: 50%;
+    height: 100%;
+}
+
+#hero_title {
+    width: 90%;
+    height: 55%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: var(--title-font);
+    font-size: 10vw;
+    color: var(--text-color);
+    position: relative;
+
+}
+
+#hero_adjusttitle::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    /* Position of the underline */
+    left: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 50%;
+    /* Thickness of the underline */
+    background-color: var(--background-color);
+    /* Color of the underline */
+    transition: width 0.3s ease;
+    /* Smooth underline animation */
+}
+
+#hero_adjusttitle:hover::after {
+    width: 100%;
+}
+
+#hero_titlech {
+    font-size: 12vw;
+    color: #6c88d0;
+    -webkit-text-stroke: 2px black;
+    /* Border color and thickness */
+}
+
+#hero_adjusttitle {
+    cursor: pointer;
+    position: relative;
+    animation: slideIn 1s ease-out forwards;
+    /* 2s duration, ease-out effect */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    /* box-sizing: border-box; */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%);
+        transform: scaleX(-1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidenav {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(50%);
+        /* Start from off-screen right */
+        opacity: 0;
+        /* Optional: Fade in effect */
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: scaleX(-1);
+        opacity: 1;
+    }
+}
+
+
+#hero_tagline {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font);
+    font-size: 1.8vw;
+    cursor: default;
+    font-weight: 600;
+    animation: slideIn 1s ease-out forwards;
+    color: var(--text-color);
+}
+
+@media (max-width: 950px) {
+    #hero_tagline {
+        align-items: baseline;
+    }
+    #hero_logo{
+        width: 70%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.second{
+    display: none;
+}
+@media (max-width: 750px) {
+    .first{
+        display: none;
+    }
+    .second{
+        display: flex;
+    }
+    .hero_navbar {
+        width: 90%;
+    }
+    
+    #hero_adjusttitle:hover::after {
+        width: 0%;
+    }
+    .hero_display {
+        flex-direction: column;
+    }
+
+    .hero_attractimgdiv {
+        width: 100%;
+        padding-top: 7rem;
+    }
+
+    #hero_title {
+        width: 100%;
+        font-size: 23vw;
+        align-items: end;
+    }
+
+    #hero_titlech {
+        font-size: 28vw;
+        -webkit-text-stroke: 5px black;
+        padding: 0 0.5rem;
+    }
+
+    #hero_tagline {
+        width: 100%;
+        font-size: 3.8vw;
+    }
+
+    .hero_nametagline {
+        width: 100%;
+        height: 100%;
+        margin-bottom: -28rem;
+    }
+
+    #hero_attractimg {
+        width: 80%;
+    }
+    #hero_closedivattractimg {
+        width: 100%;
+        display: contents;
+    }
+}
+@media (max-width:450px){
+    #hero_attractimg {
+        width: 95%;
+    }
+    .hero_divoflogo {
+        width: 15%;
+    }
+    #hero_logo{
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+@media (max-width:750px) and (min-width:550px) {
+    #hero_attractimg {
+        width: 50%;
+    }
+    #hero_titlech {
+        font-size: 20vw;
+    }
+    #hero_adjusttitle {
+        font-size: 6rem;
+    }
+}

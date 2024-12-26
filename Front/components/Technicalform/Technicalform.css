@@ -1,0 +1,133 @@
+.technical_contactpage{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid black;
+    margin-bottom: 5rem;
+}
+.technical_container {
+    background-color: #f7f8f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+#technical_header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--body-font);
+    font-size:xx-large;
+}
+
+.technical_form-group {
+    margin-bottom: 15px;
+}
+
+.technical_lable {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.technical_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.technical_buttoncontact {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.technical_buttoncontact:hover {
+    background-color: rgb(106, 106, 106);
+}
+
+/* ModalStyles.css */
+
+.technical_ReactModal__Content{
+    margin-top: 10rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+}
+.technical_popuph2{
+    background-color: #dee5ef;
+    border-radius: 7rem;
+    padding: 1rem;
+}
+@media (max-width: 1300px) {
+    .technical_container{
+        width: 88%;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-bottom: 2rem;
+    }
+  }
+
+.technical_contactpage{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}  
+#technical_headingdiv{
+    font-family: var(--body-font);
+    color: #657ec2;
+    font-size: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    position: relative;
+    width: max-content;
+    cursor:default;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) {
+    #technical_headingdiv {
+        font-size: 2rem;
+    }
+}
+#technical_headingdiv::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    transition: width 0.3s ease;
+    width: 100%;
+}
+#technical_heading{
+    margin-bottom: 0;
+}
+#technical_email{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: var(--body-font);
+}
+#technical_gmaildirect{
+    color : black;
+    text-decoration: none;
+    padding-left: 7px;
+}
