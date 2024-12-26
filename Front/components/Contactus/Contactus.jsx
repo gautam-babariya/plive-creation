@@ -33,7 +33,7 @@ function Contactus() {
             email: formdata.email,
             message: formdata.message,
         };
-        const contacturl = import.meta.env.VITE_CONTACT_URL
+        const contacturl = 'plivecreation-api.vercel.app/contact';
         try {
             const response = await axios.post(contacturl, productData, {
                 headers: {
