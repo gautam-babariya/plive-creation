@@ -65,12 +65,12 @@ router.post('/contact', async (req, res) => {
         });
         await contact.save();
 
-        const telegramMessage = `New Contact Submission:\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`;
+        // const telegramMessage = `New Contact Submission:\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`;
 
-        await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-            chat_id: chatId,
-            text: telegramMessage
-        });
+        // await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        //     chat_id: chatId,
+        //     text: telegramMessage
+        // });
 
         res.status(201).json(1);
     } catch (error) {
