@@ -4,7 +4,9 @@ import Modal from 'react-modal';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+
 function Technicalform() {
+  console.log(import.meta.env.VITE_TECHSUPPORT_URL);
   const navigate = useNavigate();
   const [formdata, setFormdata] = useState({
     order_id: '',

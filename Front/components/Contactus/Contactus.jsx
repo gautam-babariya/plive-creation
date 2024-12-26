@@ -4,7 +4,9 @@ import '../../public/css/variable.css'
 import Modal from 'react-modal';
 import axios from 'axios';
 
+
 function Contactus() {
+    console.log(import.meta.env.VITE_TECHSUPPORT_URL);
     const [formdata, setFormdata] = useState({
         name: '',
         phone: '',
