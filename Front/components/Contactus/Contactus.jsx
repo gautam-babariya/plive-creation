@@ -41,8 +41,8 @@ function Contactus() {
                 }
             });
             if (response.data === 1) {
-                setModalMessage("Thank you for submit. We will contact you soon");
-                setModalIsOpen(true);
+                // setModalMessage("Thank you for submit. We will contact you soon");
+                // setModalIsOpen(true);
                 const telegramMessage = `
                 New contact form submission:
                 Name: ${formdata.name}
@@ -53,16 +53,18 @@ function Contactus() {
 
                 const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
                 const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
-
+                console.log(botToken, chatId);
+                console.log(telegramMessage)
+                
                 // Send the notification to Telegram using axios
                 await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
                     chat_id: chatId,
                     text: telegramMessage
                 });
-                setTimeout(() => {
-                    setModalIsOpen(false);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 2000);
+                // setTimeout(() => {
+                //     setModalIsOpen(false);
+                //     window.scrollTo({ top: 0, behavior: 'smooth' });
+                // }, 2000);
             }
         } catch (error) {
             console.error("There was an error sending the data!", error);
