@@ -74,9 +74,10 @@ router.post('/contact', async (req, res) => {
             email: email,
             message: message
         });
-        await contact.save().then((savedData) => {
-            sendNotification(savedData,'contact from plive');
-        });
+        // await contact.save().then((savedData) => {
+        //     sendNotification(savedData,'contact from plive');
+        // });
+        await contact.save();
         res.status(201).json(1);
     } catch (error) {
         res.status(400).send(error);
