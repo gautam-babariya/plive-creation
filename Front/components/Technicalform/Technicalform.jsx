@@ -42,7 +42,7 @@ function Technicalform() {
     };
     const contacturl = import.meta.env.VITE_TECHSUPPORT_URL
     try {
-      const response = await axios.post(contacturl, productData, {
+      const response = await axios.post('https://plivecreation-api.vercel.app/techsupport', productData, {
         headers: {
           'Content-Type': 'application/json',
         }
