@@ -35,7 +35,7 @@ function Contactus() {
         };
         const contacturl = 'plivecreation-api.vercel.app/contact';
         try {
-            const response = await axios.post('plivecreation-api.vercel.app/contact', productData, {
+            const response = await axios.post('https://plivecreation-api.vercel.app/contact', productData, {
                 headers: {
                     'Content-Type': 'application/json',
                 }
