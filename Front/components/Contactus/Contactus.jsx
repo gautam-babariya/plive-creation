@@ -6,7 +6,6 @@ import axios from 'axios';
 
 
 function Contactus() {
-    console.log(import.meta.env.VITE_CONTACT_URL);
     const [formdata, setFormdata] = useState({
         name: '',
         phone: '',
