@@ -33,38 +33,20 @@ function Contactus() {
             email: formdata.email,
             message: formdata.message,
         };
-        const contacturl = 'plivecreation-api.vercel.app/contact';
+        const contacturl = import.meta.env.VITE_CONTACT_URL;
         try {
-            const response = await axios.post('https://plivecreation-api.vercel.app/contact', productData, {
+            const response = await axios.post(contacturl, productData, {
                 headers: {
                     'Content-Type': 'application/json',
                 }
             });
             if (response.data === 1) {
-                // setModalMessage("Thank you for submit. We will contact you soon");
-                // setModalIsOpen(true);
-                const telegramMessage = `
-                New contact form submission:
-                Name: ${formdata.name}
-                Phone: ${formdata.phone}
-                Email: ${formdata.email}
-                Message: ${formdata.message}
-            `;
-
-                const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
-                const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
-                console.log(botToken, chatId);
-                console.log(telegramMessage)
-                
-                // Send the notification to Telegram using axios
-                await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-                    chat_id: chatId,
-                    text: telegramMessage
-                });
-                // setTimeout(() => {
-                //     setModalIsOpen(false);
-                //     window.scrollTo({ top: 0, behavior: 'smooth' });
-                // }, 2000);
+                setModalMessage("Thank you for submit. We will contact you soon");
+                setModalIsOpen(true);
+                setTimeout(() => {
+                    setModalIsOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 2000);
             }
         } catch (error) {
             console.error("There was an error sending the data!", error);

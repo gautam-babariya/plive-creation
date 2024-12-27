@@ -42,14 +42,12 @@ function Technicalform() {
     };
     const contacturl = import.meta.env.VITE_TECHSUPPORT_URL
     try {
-      const response = await axios.post('https://plivecreation-api.vercel.app/techsupport', productData, {
+      const response = await axios.post(contacturl, productData, {
         headers: {
           'Content-Type': 'application/json',
         }
       });
       if (response.data === 1) {
-        console.log(productData);
-      
         setModalMessage("We will contact you soon");
         setModalIsOpen(true);
         setTimeout(() => {
