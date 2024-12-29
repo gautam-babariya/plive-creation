@@ -9,6 +9,11 @@ import logo from '../../public/assets/Footer/logo-background.png'
 
 
 function Footer() {
+    const email = "plivecreation@gmail.com";
+    const subject = "Inquiry About Plive Creation Services";
+    const body = `Hello Plive Creation,
+    I am interested in your services. Can you provide me more information?`;
+
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -23,7 +28,7 @@ function Footer() {
                 </div>
                 <div id='footer_info'>
                     <p id='footer_tagline' style={{ marginBottom: "5rem" }}>"Affordable, creative, and quality websites for everyone"</p>
-                    <a id='footer_gmailforcontact' href="mailto:plivecreation@gmail.com">plivecreation@gmail.com</a>
+                    <a id='footer_gmailforcontact' href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}>plivecreation@gmail.com</a>
                 </div>
             </div>
             <div id='footer_quicklinkdiv'>
