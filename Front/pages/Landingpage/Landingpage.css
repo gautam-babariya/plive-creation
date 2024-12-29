@@ -1,0 +1,16 @@
+.landing_whatsapp-icon {
+    position: fixed; /* For a floating icon */
+    bottom: 20px;    /* Adjust position */
+    right: 20px;     /* Adjust position */
+    z-index: 1000;   /* Ensure it appears above other content */
+}
+#landing_whatsappiconimg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+#landing_whatsappiconimg:hover {
+    transform: scale(1.1);
+}
