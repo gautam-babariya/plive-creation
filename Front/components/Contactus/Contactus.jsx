@@ -79,7 +79,7 @@ function Contactus() {
                     </div>
                     <button className='contact_buttoncontact' type="submit">Submit</button>
                 </form>
-                <label id='contact_email' className='contact_lable' for="name" >&#128231; <a id="contact_gmaildirect" href="mailto:gautambabariyacontact@gmail.com">gautambabariyacontact@gmail.com</a></label>
+                <label id='contact_email' className='contact_lable' for="name" >&#128231; <a id="contact_gmaildirect" href="mailto:plivecreation@gmail.com">plivecreation@gmail.com</a></label>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="contact_ReactModal__Content">
                     <h2 className='contact_popuph2'>{modalMessage}</h2>
                 </Modal>

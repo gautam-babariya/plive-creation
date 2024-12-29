@@ -12,9 +12,9 @@ function Footer() {
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({ behavior: 'smooth' });
         }
-      };
+    };
     return (
         <div className='footer_maindiv'>
             <div id='footer_infologo'>
@@ -23,7 +23,7 @@ function Footer() {
                 </div>
                 <div id='footer_info'>
                     <p id='footer_tagline' style={{ marginBottom: "5rem" }}>"Affordable, creative, and quality websites for everyone"</p>
-                    <a id='footer_gmailforcontact' href="mailto:gautambabariyacontact@gmail.com">gautambabariyacontact@gmail.com</a>
+                    <a id='footer_gmailforcontact' href="mailto:plivecreation@gmail.com">plivecreation@gmail.com</a>
                 </div>
             </div>
             <div id='footer_quicklinkdiv'>
@@ -34,7 +34,7 @@ function Footer() {
                             className='footer_navlinks'
                             to="#"
                             onClick={() => {
-                                scrollToSection('home'); 
+                                scrollToSection('home');
                             }}
                         >
                             Home
@@ -45,7 +45,7 @@ function Footer() {
                             className='footer_navlinks'
                             to="#"
                             onClick={() => {
-                                scrollToSection('about_maindiv'); 
+                                scrollToSection('about_maindiv');
                             }}
                         >
                             About
@@ -56,7 +56,7 @@ function Footer() {
                             className='footer_navlinks'
                             to="#"
                             onClick={() => {
-                                scrollToSection('pricing'); 
+                                scrollToSection('pricing');
                             }}
                         >
                             Pricing
@@ -67,7 +67,7 @@ function Footer() {
                             className='footer_navlinks'
                             to="#"
                             onClick={() => {
-                                scrollToSection('contact'); 
+                                scrollToSection('contact');
                             }}
                         >
                             Contact us
@@ -86,12 +86,20 @@ function Footer() {
             <div id='footer_socialmedia'>
                 <h1 id='footer_socialtitle'>Follow Us</h1>
                 <div id='footer_socialmedia_icons'>
-                    <div id='footer_instagram'>
-                        <img id='footer_instaimg' src={insta} alt='instagram' />
-                    </div>
-                    <div id='footer_linkedin'>
-                        <img id='footer_linkedinimg' src={linkedin} alt='linkedin' />
-                    </div>
+                    <Link
+                        className='footer_navlinks'
+                        to="https://www.instagram.com/plivecreation?igsh=bnVpeGlrZDJyNTc=" target='_blank'>
+                        <div id='footer_instagram'>
+                            <img id='footer_instaimg' src={insta} alt='instagram' />
+                        </div>
+                    </Link>
+                    <Link
+                        className='footer_navlinks'
+                        to="https://www.linkedin.com/in/plivecreation" target='_blank'>
+                        <div id='footer_linkedin'>
+                            <img id='footer_linkedinimg' src={linkedin} alt='linkedin' />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

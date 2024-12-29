@@ -105,7 +105,7 @@ function Technicalform() {
           </div>
           <button className='technical_buttoncontact' type="submit">Submit</button>
         </form>
-        <label id='technical_email' className='technical_lable' for="name" >&#128231; <a id="technical_gmaildirect" href="mailto:gautambabariyacontact@gmail.com">gautambabariyacontact@gmail.com</a></label>
+        <label id='technical_email' className='technical_lable' for="name" >&#128231; <a id="technical_gmaildirect" href="mailto:plivecreation@gmail.com">plivecreation@gmail.com</a></label>
         <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="technical_ReactModal__Content">
           <h2 className='technical_popuph2'>{modalMessage}</h2>
         </Modal>
