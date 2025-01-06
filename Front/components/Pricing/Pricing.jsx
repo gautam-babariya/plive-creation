@@ -43,7 +43,7 @@ function Pricing() {
                         <div class="pricing_card card">
                             <div class="card-body pricing_cardbody">
                                 <h5 class="card-title pricing_cardtitle">Standard plan<br></br><p id='pricing_popular'>(most popular)</p>
-                                    <p className='pricing_money'>₹ 3999</p></h5>
+                                    <p className='pricing_money'>₹ 4999</p></h5>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item pricing_items">5 pages in website<img src={check} alt="check" className="pricing_checkimg" /></li>
