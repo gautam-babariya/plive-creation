@@ -1,0 +1,51 @@
+/* TermsAndConditions.css */
+
+/* General Styles */
+.terms_conditions_body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Headings */
+.terms_conditions_title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.terms_conditions_section_title {
+    font-size: 2em;
+    color: #2980b9;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.terms_conditions_intro,
+.terms_conditions_description,
+.terms_conditions_intro_text,
+.terms_conditions_services_text,
+.terms_conditions_user_responsibility_text,
+.terms_conditions_payment_terms_text,
+.terms_conditions_refund_cancellation_text,
+.terms_conditions_contact_text {
+    margin-bottom: 15px;
+}
+
+/* Lists */
+.terms_conditions_services_list,
+.terms_conditions_user_responsibility_list,
+.terms_conditions_contact_list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.terms_conditions_service_item,
+.terms_conditions_user_responsibility_item,
+.terms_conditions_contact_item {
+    margin-bottom: 10px;
+}

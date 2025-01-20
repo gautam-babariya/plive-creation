@@ -39,28 +39,6 @@ function Footer() {
                             className='footer_navlinks'
                             to="#"
                             onClick={() => {
-                                scrollToSection('home');
-                            }}
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li class="nav-item">
-                        <Link
-                            className='footer_navlinks'
-                            to="#"
-                            onClick={() => {
-                                scrollToSection('about_maindiv');
-                            }}
-                        >
-                            About
-                        </Link>
-                    </li>
-                    <li class="nav-item">
-                        <Link
-                            className='footer_navlinks'
-                            to="#"
-                            onClick={() => {
                                 scrollToSection('pricing');
                             }}
                         >
@@ -84,6 +62,30 @@ function Footer() {
                             to="/technicalsupport"
                         >
                             Technical support
+                        </Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link
+                            className='footer_navlinks'
+                            to="/privacy-page"
+                        >
+                            Privacy Policy
+                        </Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link
+                            className='footer_navlinks'
+                            to="/refund-policy"
+                        >
+                            Refund & Cancellation
+                        </Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link
+                            className='footer_navlinks'
+                            to="/terms-and-conditions"
+                        >
+                            Terms & Conditions
                         </Link>
                     </li>
                 </ul>

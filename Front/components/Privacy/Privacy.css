@@ -1,0 +1,98 @@
+/* Privacy.css */
+
+/* General Styles */
+.privacy_body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Headings */
+.privacy_title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.privacy_section_title {
+    font-size: 2em;
+    color: #2980b9;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.privacy_subtitle {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.privacy_last_updated,
+.privacy_intro,
+.privacy_data_use,
+.privacy_definition_intro,
+.privacy_data_intro,
+.privacy_usage_data_intro,
+.privacy_tracking_intro,
+.privacy_cookie_info,
+.privacy_use_intro,
+.privacy_retention_intro,
+.privacy_transfer_intro,
+.privacy_delete_intro,
+.privacy_business_intro,
+.privacy_law_intro,
+.privacy_other_intro,
+.privacy_children_intro,
+.privacy_links_intro,
+.privacy_changes_intro,
+.privacy_contact_intro {
+    margin-bottom: 15px;
+}
+
+/* Lists */
+.privacy_definitions_list,
+.privacy_data_list,
+.privacy_tracking_list,
+.privacy_cookie_list,
+.privacy_use_list,
+.privacy_share_list,
+.privacy_other_list,
+.privacy_contact_list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.privacy_definition_item,
+.privacy_data_item,
+.privacy_tracking_item,
+.privacy_cookie_item,
+.privacy_use_item,
+.privacy_share_item,
+.privacy_other_item,
+.privacy_contact_item {
+    margin-bottom: 10px;
+}
+
+/* Links */
+.privacy_link {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.privacy_link:hover {
+    text-decoration: underline;
+}
+
+/* Additional Styles */
+.privacy_security_intro,
+.privacy_children_consent,
+.privacy_links_responsibility,
+.privacy_changes_notice,
+.privacy_changes_advice {
+    margin-top: 20px;
+}
