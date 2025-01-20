@@ -51,7 +51,7 @@ function Termcondition() {
                 If you have any questions about these Terms and Conditions, please contact us at:
             </p>
             <ul className="terms_conditions_contact_list">
-                <li className="terms_conditions_contact_item">Email: support@example.com</li>
+                <li className="terms_conditions_contact_item">Email: plivecreation@gmail.com</li>
             </ul>
         </div>
     );
