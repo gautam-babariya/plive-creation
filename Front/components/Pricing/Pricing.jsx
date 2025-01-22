@@ -34,7 +34,7 @@ function Pricing() {
                                 <li class="list-group-item pricing_items">Delivered within 3-7 days<img src={check} alt="check" className="pricing_checkimg" /></li>
                             </ul>
                             <div className='pricing_buttondiv'>
-                                <button onClick={() => (window.location.href = 'tel:9157528788')} className="pricing_button">Buy now</button>
+                                <button onClick={() => (window.location.href = 'tel:9157528788')} className="pricing_button">Call now</button>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ function Pricing() {
                                 <li class="list-group-item pricing_items">Delivered within 3-7 days<img src={check} alt="check" className="pricing_checkimg" /></li>
                             </ul>
                             <div className='pricing_buttondiv'>
-                                <button onClick={() => (window.location.href = 'tel:9157528788')} className="pricing_button">Buy now</button>
+                                <button onClick={() => (window.location.href = 'tel:9157528788')} className="pricing_button">Call now</button>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ function Pricing() {
                                 <li class="list-group-item pricing_items">Free 6 months maintenance<img src={check} alt="check" className="pricing_checkimg" /></li>
                             </ul>
                             <div className='pricing_buttondiv'>
-                                <button onClick={() => (window.location.href = 'tel:9157528788')} className="pricing_button">Buy now</button>
+                                <button onClick={() => (window.location.href = 'tel:9157528788')} className="pricing_button">Call now</button>
                             </div>
                         </div>
                     </div>
