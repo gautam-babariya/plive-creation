@@ -18,7 +18,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-
 // mongo connection..........................
 const mongourl = process.env.VITE_MONGO_URL;
 const connect = async () => {

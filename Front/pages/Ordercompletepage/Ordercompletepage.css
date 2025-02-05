@@ -1,0 +1,61 @@
+
+.order-complete-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .order-complete-title {
+    color: #4CAF50; /* Green color for the main heading */
+  }
+  
+  .order-complete-message {
+    margin: 10px 0;
+  }
+  
+  .order-summary {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .order-summary-title {
+    margin-bottom: 10px;
+  }
+  
+  .order-summary-item {
+    margin: 5px 0;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #FF5722; /* Highlight color */
+  }
+  
+  .next-steps {
+    margin: 20px 0;
+  }
+  
+  .next-steps-title {
+    margin-bottom: 10px;
+  }
+  
+  .next-steps-message {
+    margin: 5px 0;
+  }
+  
+  .contact-info {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-complete-footer {
+    margin-top: 30px;
+    font-style: italic;
+  }

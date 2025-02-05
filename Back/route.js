@@ -5,7 +5,13 @@ const ClientData = require('./model/client_data');
 const router = express.Router();
 require('dotenv').config();
 const axios = require('axios');
+const Razorpay = require("razorpay");
+const crypto = require("crypto");
 
+const razorpay = new Razorpay({
+    key_id: process.env.VITE_RAZORPAY_KEY_ID,
+    key_secret: process.env.VITE_RAZORPAY_KEY_SECRET,
+});
 
 router.get('/', (req, res) => {
     res.send('Welcome to Plive!');
@@ -77,5 +83,51 @@ router.post('/contact', async (req, res) => {
         res.status(400).send(error);
     }
 });
+router.post("/create-order", async (req, res) => {
+    try {
+        const {course_id,currency, receipt } = req.body;
+        if (!course_id) {
+            return res.status(400).json({ success: false, message: "Course ID is required" });
+        }
+        if (course_id == "Base Plan"){
+            var amount = 1999;
+        }
+        else if (course_id == "Standard Plan"){
+            var amount = 4999;
+        }
+        else{
+            return res.status(400).json({ success: false, message: "Invalid Course ID" });
+        }
+        const options = {
+            amount: amount * 100,
+            currency: currency || "INR",
+            receipt: receipt || `order_rcptid_${Math.floor(Math.random() * 100000)}`,
+        };
+
+        const order = await razorpay.orders.create(options);
+        res.status(200).json({ success: true, order });
+    } catch (error) {
+        res.status(500).json({ success: false, message: error.message });
+    }
+});
+router.post("/verify-payment", (req, res) => {
+    const { order_id, payment_id, signature } = req.body;
+    
+    const keySecret = process.env.VITE_RAZORPAY_KEY_SECRET; 
+
+    const body = order_id + "|" + payment_id;
+
+    const expectedSignature = crypto
+        .createHmac("sha256", keySecret)
+        .update(body.toString())
+        .digest("hex");
+
+    if (expectedSignature === signature) {
+        res.status(200).json({ success: true, message: "Payment verified successfully" });
+    } else {
+        res.status(400).json({ success: false, message: "Invalid signature" });
+    }
+});
+
 
 module.exports = router;
