@@ -11,7 +11,6 @@
 .pricing_carddiv{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 5rem;
     flex-wrap: wrap;
 }
@@ -56,7 +55,7 @@
 }
 .pricing_cardtitle{
     font-family: var(--heading-font);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--text-color);
 }
@@ -75,7 +74,7 @@
     margin-bottom: 0;
 }
 .pricing_card{
-    width: 20rem;
+    width: 22rem;
     border-radius: 3rem;
     background-color: #f7f8f7;
     box-shadow: 0px 0px 15px -3px rgb(83 118 160 / 57%);
