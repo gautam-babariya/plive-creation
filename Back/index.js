@@ -6,6 +6,9 @@ require('dotenv').config();
 const cors = require('cors');
 const app = express();
 const port = 3000;
+const multer = require("multer");
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
+const cloudinary = require("cloudinary").v2;
 
 app.use(cors());
 app.use((req, res, next) => {
@@ -30,6 +33,30 @@ const connect = async () => {
 }
 connect();
 
+cloudinary.config({
+    cloud_name: 'delde3vvw',
+    api_key: 736574341257319,
+    api_secret: 'stUNUlwq3i_-P3LyG2lPFXnHjHU',
+});
+
+const storage = new CloudinaryStorage({
+    cloudinary,
+    params: {
+        folder: "uploads",
+        allowed_formats: ["jpg", "png", "jpeg", "webp"],
+    },
+});
+
+const upload = multer({ storage });
+
+app.post("/upload", upload.single("image"), (req, res) => {
+    if (!req.file) return res.status(400).json({ error: "No file uploaded" });
+    res.status(200).json({
+      message: "Upload successful",
+      url: req.file.path,
+      public_id: req.file.filename,
+    });
+  });
 app.use('/', routes);
 
 app.listen(port, () => {
