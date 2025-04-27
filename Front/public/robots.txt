@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://plivecreation.icu/sitemap.xml
+Sitemap: https://www.plivecreation.icu/sitemap.xml
