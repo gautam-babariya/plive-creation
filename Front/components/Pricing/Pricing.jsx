@@ -18,7 +18,7 @@ function Pricing() {
                             <div className="card-body pricing_cardbody">
                                 <h5 className="card-title pricing_cardtitle">
                                     Business Plan<br />
-                                    <p className='pricing_money'>₹6,999</p>
+                                    <p className='pricing_money'>₹5,999</p>
                                 </h5>
                             </div>
                             <ul className="list-group list-group-flush">
@@ -66,7 +66,7 @@ function Pricing() {
                         <div class="pricing_card card">
                             <div class="card-body pricing_cardbody">
                                 <h5 class="card-title pricing_cardtitle">Basic Ecommerce<br></br><p id='pricing_popular'>(most popular)</p>
-                                    <p className='pricing_money'>₹14,999</p></h5>
+                                    <p className='pricing_money'>₹11,999</p></h5>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item pricing_items">10 pages in website<img src={check} alt="check" className="pricing_checkimg" /></li>
@@ -95,7 +95,7 @@ function Pricing() {
                         <div class="pricing_card card">
                             <div class="card-body pricing_cardbody">
                                 <h5 class="card-title pricing_cardtitle">Advance Ecommerce<br></br>
-                                    <p className='pricing_money'>₹19,999</p></h5>
+                                    <p className='pricing_money'>₹14,999</p></h5>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item pricing_items">20 pages in website<img src={check} alt="check" className="pricing_checkimg" /></li>
